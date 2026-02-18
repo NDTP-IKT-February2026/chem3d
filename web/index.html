@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Химия - Визуализация формул с распознаванием атомов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="controls">
+        <input type="text" id="formula-input" placeholder="Введите химическую формулу, например: H2O" value="H2O">
+        <button id="send-btn">Сгенерировать 3D</button>
+    </div>
+    <div id="status" class="hidden">Статус</div>
+    
+    <div id="atom-info-panel">
+        <h3>Информация об атоме</h3>
+        <div id="atom-info-content">
+            <div class="atom-property">
+                <span class="label">Элемент:</span>
+                <span class="value" id="atom-element">—</span>
+            </div>
+            <div class="atom-property">
+                <span class="label">Индекс:</span>
+                <span class="value" id="atom-index">—</span>
+            </div>
+            <div class="atom-property">
+                <span class="label">Позиция X:</span>
+                <span class="value" id="atom-pos-x">—</span>
+            </div>
+            <div class="atom-property">
+                <span class="label">Позиция Y:</span>
+                <span class="value" id="atom-pos-y">—</span>
+            </div>
+            <div class="atom-property">
+                <span class="label">Позиция Z:</span>
+                <span class="value" id="atom-pos-z">—</span>
+            </div>
+        </div>
+        <button id="atom-model-btn" disabled>🔬 Показать 3D модель атома</button>
+        <div style="color: #aaa; font-size: 12px; text-align: center; margin-top: 10px;">Кликните на атом для информации</div>
+    </div>
+    
+    <button id="atom-list-btn">📋 Показать все атомы</button>
+    <div id="atom-list"></div>
+    
+    <button id="back-to-molecule-btn" style="display: none;">⬅ Вернуться к молекуле</button>
+    <button id="view-toggle" style="display: none;">🌐 Режим: Молекула</button>
+
+    <!-- Подключаем Three.js и необходимые загрузчики -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.128.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.128.0/examples/jsm/"
+            }
+        }
+    </script>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
