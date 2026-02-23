@@ -350,7 +350,7 @@ async function loadAtomModelInScene(element) {
     atomModelBtn.disabled = true;
 
     try {
-        const baseUrl = CONFIG.ATOM_API;
+        const baseUrl = 'http://localhost:8007/atom_model/';//CONFIG.ATOM_API;
         const url = new URL(baseUrl);
         url.searchParams.append('atom_name', element);
         
@@ -975,7 +975,7 @@ async function sendFormula() {
     setStatus('Отправка запроса...', false, true);
 
     try {
-        const baseUrl = CONFIG.MODEL_GENERATOR_API;
+        const baseUrl =  'http://localhost:8007/generate_chemistry_3d/';//CONFIG.MODEL_GENERATOR_API;
         const url = new URL(baseUrl);
         url.searchParams.append('chemistry_formule', formula);
         
