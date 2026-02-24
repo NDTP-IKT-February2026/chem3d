@@ -107,8 +107,11 @@ Returns a ZIP file containing the pre-modeled 3D atom model.
 
 ### Screenshots
 ![](https://github.com/NDTP-IKT-February2026/chem3d/blob/master/screenshots/Screenshot1.png)
+
 ![](https://github.com/NDTP-IKT-February2026/chem3d/blob/master/screenshots/Screenshot2.png)
+
 ![](https://github.com/NDTP-IKT-February2026/chem3d/blob/master/screenshots/Screenshot3.png)
+
 ![](https://github.com/NDTP-IKT-February2026/chem3d/blob/master/screenshots/Screenshot4.png)
 
 
