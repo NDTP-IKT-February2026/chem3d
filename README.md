@@ -106,10 +106,10 @@ Returns a ZIP file containing:
 Returns a ZIP file containing the pre-modeled 3D atom model.
 
 ### Screenshots
-![](screenshots/screenshot1.png)
-![](screenshots/screenshot2.png)
-![](screenshots/screenshot3.png)
-![](screenshots/screenshot4.png)
+![](./screenshots/screenshot1.png)
+![](./screenshots/screenshot2.png)
+![](./screenshots/screenshot3.png)
+![](./screenshots/screenshot4.png)
 
 
 
