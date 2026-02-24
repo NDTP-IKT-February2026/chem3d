@@ -10,4 +10,4 @@ wheels/
 .venv
 
 #config
-config.js
+config.json
