@@ -1,0 +1,4 @@
+{
+    "MODEL_GENERATOR_API": "YOUR_API/generate_chemistry_3d/",
+    "ATOM_API": "YOUR_API/atom_model/"
+}
