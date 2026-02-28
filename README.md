@@ -52,7 +52,7 @@ Clone repository
 
 #### Install Python dependencies:
 
-    uv add -r requirements.txt
+    uv sync
  
 #### Start the FastAPI server:
 
